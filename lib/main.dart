@@ -15,69 +15,112 @@ class XylophoneApp extends StatelessWidget {
         body:SafeArea(
           child: Container(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                  ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
-              ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.red,
-                  ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
+                                ),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.green,
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
                   ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
                   ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.yellow,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
                   ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.yellow,
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.orange,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
                   ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.pink,
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.deepPurple,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
                   ),
-                  onPressed: () {
-
-                  },
-                  child: Text(''),
+                ),
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.pink,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // removes round corners
+                      ),
+                      padding: EdgeInsets.zero, // removes inner spacing
+                    ),
+                    onPressed: () {
+                  
+                    },
+                    child: Text(''),
+                  ),
                 ),
               ],
             ),
