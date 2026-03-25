@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(XylophoneApp());
@@ -26,9 +27,15 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
-                    },
+              onPressed: () async {
+                final player = AudioPlayer();
+
+                await player.setSource(
+                  AssetSource('freesound_community-xylophone-a-45818.mp3'),
+                );
+
+                await player.resume(); //  IMPORTANT
+              },
                     child: Text(''),
                                 ),
                 ),
@@ -41,8 +48,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('freesound_community-xylophone-a-45818.mp3'));
                     },
                     child: Text(''),
                   ),
@@ -56,8 +64,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('freesound_community-xylophone-a-45818 (1).mp3'));
                     },
                     child: Text(''),
                   ),
@@ -71,8 +80,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('note 1.mp3'));
                     },
                     child: Text(''),
                   ),
@@ -86,8 +96,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('the-sound-of-a-xylophone.mp3'));
                     },
                     child: Text(''),
                   ),
@@ -101,8 +112,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('VisualStudioSetup.exe'));
                     },
                     child: Text(''),
                   ),
@@ -116,8 +128,9 @@ class XylophoneApp extends StatelessWidget {
                       ),
                       padding: EdgeInsets.zero, // removes inner spacing
                     ),
-                    onPressed: () {
-                  
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      player.play(AssetSource('the-sound-of-a-xylophone.mp3'));
                     },
                     child: Text(''),
                   ),
